@@ -1,0 +1,85 @@
+html {
+    background-image: url("https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&w=800");
+    background-size: cover;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.display {
+    min-height: 10vh;
+
+    border: black solid 2px;
+    background-color: white;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 5px;
+    text-align: right;
+}
+
+.upper-display {
+    font-weight: 200;
+    font-size: 15px;
+    opacity: 0.75;
+}
+
+.clear {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: lightblue;
+}
+
+.delete {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: lightcoral;
+}
+
+.equals {
+    background-color: lightsalmon;
+}
+
+button {
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.calculator-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 300px;
+    grid-gap: 5px;
+    background-color: lightslategray;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    height: 50vh;
+    width: 20vw;
+    margin-top: 20vh;
+    min-height: 300px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    margin-top: auto;
+    min-width: 100vw;
+    font-size: 20px;
+}
